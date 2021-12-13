@@ -9,11 +9,11 @@ by Matt Graham
 
 body {
   font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#1BE1AF;
+  color:#A2E992;
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
-  background: url(../images/body-background.png) #3EC7FC;
+  background: url(../images/body-background.png) #92D3E9;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -204,15 +204,15 @@ header {
   margin-right:-382px;
   position: fixed;
   top: 115px;
-  background: #ffcc00;
-  border: 1px solid #f0b500;
+  background: #CA6BD7;
+  border: 1px solid #7CE139 ;
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
   border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
 
   .button {
-    border: 1px solid #dba500;
-    background: linear-gradient(rgb(255, 231, 136), rgb(255, 206, 56));
+    border: 1px solid #2BDA74;
+    background: linear-gradient(rgb(43, 218, 116), rgb(16, 189, 88));
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,.4), 0px 1px 1px rgba(0,0,0,.1);
     background-color: #FFE788;
