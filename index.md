@@ -2,13 +2,6 @@
 layout: default
 ---
 
-@import"{{ site.theme }}";
-.page-header{
-color:#ffff;
-background-color:#A067AB;
-background-image:linear-gradient(120deg,#5073B8,#A067AB);
-}
-
 ## Depression
 
 You can use the [editor on GitHub](https://github.com/93155/bbear_bbear/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
