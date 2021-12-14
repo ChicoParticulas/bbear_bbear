@@ -8,12 +8,12 @@ by Matt Graham
 @import "rouge-base16-dark";
 
 body {
-  font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#2b2b2b;
+  font:16px/22px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:invert($body-link-color);
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
-  background: url(../images/body-background.png) #eae6d1;
+  background: thick solid invert($body-link-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
