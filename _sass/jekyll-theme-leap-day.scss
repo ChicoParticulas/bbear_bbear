@@ -13,7 +13,7 @@ body {
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
-  background: url() #ACD5E3;
+  background: url() #D7E2E6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -215,7 +215,7 @@ header {
     background: linear-gradient(rgb(255, 231, 136), rgb(255, 206, 56));
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,.4), 0px 1px 1px rgba(0,0,0,.1);
-    background-color: #D9E1E4;
+    background-color: #D7E2E6;
     margin-left: 5px;
     padding: 10px 12px;
     margin-top: 6px;
@@ -240,7 +240,7 @@ header {
     margin-top: 6px;
     line-height:14px;
     font-size:14px;
-    background-color: #FFE788;
+    background-color: ##D7E2E6;
   }
 
   .downloads {
@@ -268,20 +268,11 @@ header {
       display:inline;
 
       a.button {
-        background-color: #FFE788;
+        background-color: #D7E2E6;
       }
     }
   }
 
-  #logo {
-    position:absolute;
-    height: 36px;
-    width: 36px;
-    right:7px;
-    top:7px;
-    display: block;
-    background: url(../images/octocat-logo.svg);
-  }
 }
 
 section {
