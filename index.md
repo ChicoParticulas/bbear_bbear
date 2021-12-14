@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-# What is Depression?
-
-## Use language markers to analyze the relationship between depression and seasons or international events
 
 A growing body of evidence shows that people with depression use language differently. Many studies have unveiled a class of words that can help accurately predict whether someone is suffering from depression. The most robust language marker of depression is the frequency of using first-person singular pronouns, such as I and my. Moreover, specific negative descriptors are linked to the tendency of depression.
 
