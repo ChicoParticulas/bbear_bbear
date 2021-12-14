@@ -8,12 +8,12 @@ by Matt Graham
 @import "rouge-base16-dark";
 
 body {
-  font:35px/12px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#F8A030;
+  font:18px/12px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#30AEF8;
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
-  background: url() #76F830;
+  background: url() #F86930;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +61,7 @@ a small {
 }
 
 ul{
-  list-style-image:url('https://www.apa.org/images/sad-title-image_tcm7-179953.jpg');
+  list-style-image:url('');
 }
 
 strong {
@@ -70,7 +70,7 @@ strong {
 }
 
 .wrapper {
-  width:650px;
+  width:1000px;
   margin:0 auto;
   position:relative;
 }
