@@ -115,7 +115,7 @@ kbd {
   background-color: #EEFCFF;
   border: 0px solid #EEFCFF;
   border-bottom-color: #EEFCFF;
-  border-radius: 3px;
+  border-radius: 0px;
   box-shadow: inset 0 -1px 0 #EEFCFF;
   color: #EEFCFF;
   display: inline-block;
@@ -404,8 +404,8 @@ footer {
   }
 
   section {
-    border:1px solid #EEFCFF;
-    border-width:1px 0;
+    border:0px solid #EEFCFF;
+    border-width:0px 0;
     padding:20px 0;
     margin: 190px auto 20px;
     max-width: 600px;
