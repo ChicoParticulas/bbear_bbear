@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+# What is Depression?
 
 ## Use language markers to analyze the relationship between depression and seasons or international events
 
