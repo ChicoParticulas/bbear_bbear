@@ -132,7 +132,7 @@ table {
 
 th {
   text-align:justify;
-  text-justify:distribute;
+  text-justify:inter-ideograph;
   padding:5px 10px;
   border-bottom:1px solid #e5e5e5;
   color: #444;
@@ -140,7 +140,7 @@ th {
 
 td {
   text-align:justify;
-  text-justify:distribute;
+  text-justify:inter-ideograph;
   padding:5px 10px;
   border-bottom:1px solid #e5e5e5;
   border-right: 1px solid #ffcc00;
@@ -217,7 +217,7 @@ nav {
   top: 250px;
   left:50%;
   margin-left:-580px;
-  text-align: right;
+  text-align: center;
 
   ul {
     list-style: none;
