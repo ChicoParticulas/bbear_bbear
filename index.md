@@ -11,6 +11,10 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 - Analyzing the correlation between the frequency of using negative words and seasons 
 - Analyzing the change in the number of negative words each year, and identifying whether the growing number of negative words is related to significant events by date. For example, if we can identify more negative words in 2020 due to the occurrence of COVID-19.
 
+## Conclusion
+
+### Reference
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
