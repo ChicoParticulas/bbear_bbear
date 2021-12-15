@@ -34,17 +34,8 @@ Therefore, in the next step, we will consider building a custom model to get mor
 #### Word and phrase extraction
 We will determine the frequency with which users used specific words or two-word phrases (bigrams) by using open-source Python-based language analysis. For example, we will count the number of the negative words that have been proven to be linked to depression, such as first-person singular pronouns (I, me, and my), ruminating thinking language markers (a lot, lot), and sad expression markers (miss, loss, alone).
 
-#### Topic Modeling
-We want to categorize different negative words, such as anxiety, ruminating thinking, and a class of somatic complaints. One possible method is applying latent Dirichlet allocation (LDA). Hopefully, LDA can produce clusters of words in the same context across Quotebank, yielding semantically coherent topics.
- | Potential Topics | Language markers |
- |---|---|
- | Depression mood | Tears, cry, pain |
- | Loneliness | Miss, much, baby |
- | Hostility | Hate, ugh, fuckin |
- | Rumination | Mind, a lot, lot |
- | Anxiety | Scared, upset, worry |
- | Somatic complaints | Hurt, head, bad |
- | Medical references | Hospital, pain, surgery |
+#### Is there a growing Awareness?
+![awareness](/assets/awareness.png)
 
 ## Conclusion
 
