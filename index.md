@@ -35,9 +35,9 @@ Therefore, in the next step, we will consider building a custom model to get mor
 We will determine the frequency with which users used specific words or two-word phrases (bigrams) by using open-source Python-based language analysis. For example, we will count the number of the negative words that have been proven to be linked to depression, such as first-person singular pronouns (I, me, and my), ruminating thinking language markers (a lot, lot), and sad expression markers (miss, loss, alone).
 
 ### Is there a growing Awareness?
-![<awareness src="awareness.jpeg"  width="100" height="50"/>](assets/images/awareness.jpeg){: style="float: left"}
-
-yayyayaya
+<p align="center">
+  <awareness width="460" height="300" src="awareness.jpeg">(assets/images/awareness.jpeg)
+</p>
 
 ## Conclusion
 
