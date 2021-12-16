@@ -15,7 +15,7 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 - Analyzing gender effect in negative emotions
 
 ## Method
-To look into this topic, we are going to analyze the dataset from [Quotebank](./another-page.html)., which is a corpus of quotations from a decade of news, 
+To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We focused on the data from 2017 to 2020, since the distribution of data in 2016 is not 
 
 
 ### Is there a growing Awareness?
