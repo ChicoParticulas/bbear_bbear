@@ -17,28 +17,6 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 ## Method
 To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We focused on the data from 2017 to 2020, since the data in 2016 is not equally distributed and only covers until April in 2021. For all the analysis, we randomlly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. The detailed analytic methods are describled below and shown in Fig.1.
 
-#### Analyzing if there is a growing awareness of mental disorder
-
-#### Analyzing the seasonal effect on negative emotions
-1. Take 1 million quotes for each year in 2017 - 2019.
-2. Divided the 1 million quotes into 12 months, that is 12 pools.
-3. **Bootstrapping (Randomly sampling) 10 thousands quotes from every month pool, so that each month pool contains 10 thousands quotes.
-4. Calculate the negative count of each month pool.
-5. **Repeat steps 3 and step 4 with replication n = 30, so we can calculate the median and standard deviation of the negative quotes for each month.
-6. Draw box plots of spring, summer, autumn and winter.
-
-
-#### Analyzing gender effect in negative emotions
-1. Take 1 million quotes for each year in 2017 – 2019.
-2. Append the polarity scores for each quotes.
-3. Apply genderize library to categorize the quotes by the gender of the first names
-4. Divided the quotations in two gender types into 12 months, that is **24 pools.
-5. Bootstrapping (Randomly sampling) 5 thousands quotes from every month pool, so that each month pool contains 5 thousands quotes.
-6. Calculate the negative count of each month pool.
-7. Repeat steps 3 and step 4 with replication n = 30, so we can calculate the median and standard deviation of the negative quotes for each month.
-8. Draw box plots over time, and compare the gender means and variation over time.
-
-
 ## Our Discoveries
 ### Growing Awareness
 It is only until recently that people started to be more and more aware of mental condition. **Many surveys show that public concern about mental health has increased in recent years.** Therefore, we are going to figure out if there is a growing attention to mental condition in society as the disorder prevails by the following keywords: **mental illness, psychopath, depression, mental disorder**.
