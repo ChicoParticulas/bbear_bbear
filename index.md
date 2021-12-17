@@ -56,23 +56,27 @@ In the sentiment analysis of 10,000 random numbers taken every month, we analyze
 To sum up, compared with analyzing the changes of negative words quotes over year, the changes in polarity scores over year are more pronounced. This could be because that when we analyze the number of negative words quotes over year, only specific quotes contain negative words in our defined list are counted. However, when we analyze the polarity scores of the quotes, TextBlob is compared to NLTK training set, so the negative words considered are broader. Also, TextBlob uses a weighted average sentiment score over all the words in each sentence.
 
 ### Gender Effect
-**Women are more prone to depression and moody swings.** So we want to identify these 2 phenomenon by calculating the female group’s 
-- variation of sentiment polarity over time 
-- mean of sentiment polarity over time 
-And compare the results with the parameters in male group.
+Accordig to research over the years, it is believed that **women are more prone to depression and mood swings.** To figure out this issue, we made use of Quotebank, which contains quotes from both men and women, and tried to identify these two phenomena by calculating and comparing the **variation and mean of sentiment polarity** over time between male and feamale group.
+
+![**"Fig.9 gender"**](assets/images/GENDER.jpeg)
+
+Whether analyzing all sentences or only analyzing the sentences that are neutral or negative (polarity<=0), we can observe the following two phenomena:
+
+1. In 2015, 2017, 2018, and 2019, the ratio of gender saying negative quotes is 1:1.1 (men: women), which means that more negative quotes come from women every year.
+2. The number of negative quotes from women is increasing year by year:
+ In 2015, for every 1500 negative quotes, only (650-750) negative quotes came from women. However, in 2019, there were (700-775) negative quotes that came from women, which is about 1.05 times of that in 2015.
 
 
 ## Conclusions
-We randomly sample millions of data per year based on 2015, 2017, 2018, and 2019 and consider bootstrapping method, sentiment analysis, and the classification of the gender. The conclusions are as follows:
-1. Public awareness of negative emotion over time: 
+We randomly sampled millions of data per year based on the data in 2015, 2017, 2018, and 2019 and considered bootstrapping method, sentiment analysis, and the classification of the gender. The conclusions of our project are as follows:
+**1. There is a growing trend of negative emotion.**
 We found that the quotes of negative words have been increasing year by year since 2015, reaching the highest value in 2019
-2. Seasonal effect
+**2. Seasonal effect**
+Overall, we could not tell the seasonal effect 
 (a) Number of negative quotes: The ratio of negative quotes to all quotes is 5-7% regardless of the season.
-
 (b) Polarity scores vary in the year: Regardless of the season, the negative polarity scores fall from -0.08 to -0.07, indicating only a mild negative tendency among these years.
 3. Gender differences in negative emotions
 (a) The ratio of males to females who spoke negatively is about 1:1.1. That is to say, girls are more negatively inclined, which is consistent with the scientific fact-Women Are More Prone to Depression.
-
 (b) From 2015 to 2019, there has been a gradual increase in female negative quotes. The number of female negative speeches in 2019 is 1.05 times in 2015.
 
 ### Reference
