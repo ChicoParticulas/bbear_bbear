@@ -10,16 +10,56 @@ As depression is one of the priority conditions covered by WHO for its severenes
 A growing body of evidence shows that people with depression use language differently. Many studies have unveiled a class of words that can help accurately predict whether someone is suffering from depression. The most robust language marker of depression is the frequency of using first-person singular pronouns, such as I and my. Moreover, specific negative descriptors are linked to the tendency of depression.
 
 Under this context, we have applied **sentiment analysis** to automatically sort text data from Quotebank by positive, negative, and neutral sentiments. The further goals of our project are 
-- Analyzing if there is a growing awareness of mental disorder
-- Analyzing the seasonal effect on negative emotions
-- Analyzing gender effect in negative emotions
+1. Analyzing if there is a growing awareness of mental disorder
+2. Analyzing the seasonal effect on negative emotions
+3. Analyzing gender effect in negative emotions
 
 ## Method
-To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We focused on the data from 2017 to 2020, since the distribution of data in 2016 is not 
+To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We focused on the data from 2017 to 2020, since the data in 2016 is not equally distributed and only covers until April in 2021. For all the analysis, we randomlly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. The detailed analytic methods are describled below and shown in Fig.1.
+
+#### Analyzing if there is a growing awareness of mental disorder
+
+#### Analyzing the seasonal effect on negative emotions
+1. Take 1 million quotes for each year in 2017 - 2019.
+2. Divided the 1 million quotes into 12 months, that is 12 pools.
+3. Bootstrapping (Randomly sampling) 10 thousands quotes from every month pool, so that each month pool contains 10 thousands quotes.
+4. Calculate the negative count of each month pool.
+5. Repeat steps 3 and step 4 with replication n = 30, so we can calculate the median and standard deviation of the negative quotes for each month.
+6. Draw box plots of spring, summer, autumn and winter.
+
+
+#### Analyzing gender effect in negative emotions
+1. Take 1 million quotes for each year in 2017 – 2019.
+2. Append the polarity scores for each quotes.
+3. Apply genderize library to categorize the quotes by the gender of the first names
+4. Divided the quotations in two gender types into 12 months, that is 24 pools.
+5. Bootstrapping (Randomly sampling) 5 thousands quotes from every month pool, so that each month pool contains 5 thousands quotes.
+6. Calculate the negative count of each month pool.
+7. Repeat steps 3 and step 4 with replication n = 30, so we can calculate the median and standard deviation of the negative quotes for each month.
+8. Draw box plots over time, and compare the gender means and variation over time.
+
 
 
 ### Is there a growing Awareness?
+It is only until recently that people started to be more and more aware of mental condition. Many surveys show that public concern about mental health has increased in recent years. Therefore, we are going to figure out if there is a growing attention to mental condition in society as the disorder prevails by the following keywords: mental illness, psychopath, depression, mental disorder.
+
 ![<awareness src="awareness.jpeg"  align="center" width="100" height="50"/>](assets/images/awareness.jpeg)
+
+### Seasonal effect on negative emotions
+##### What is SAD?
+Seasonal affective disorder (SAD) is a type of depression that's related to changes in seasons —symptoms start in the fall and continue into the winter months, sapping your energy and making you feel moody. These symptoms often resolve during the spring and summer months
+##### Cause
+- Neurotransmitter regulation issues: People with SAD may have trouble regulating serotonin
+- Melatonin Overproduction: Darkness increases production of melatonin, which regulates sleep. As winter days become shorter, melatonin production increases, leaving people with SAD to feel sleepier and more lethargic, often with delayed circadian rhythms.
+- Vitamin D Underproduction: People with SAD also may produce less Vitamin D, which is believed to help with serotonin activity.
+- SAD and other forms of depression is exercise and physical activity, but these may be difficult to instigate due to lack of motivation and the cold temperatures in the winter.
+
+### Analyzing gender effect in negative emotions
+**Women are more prone to depression and moody swings.** So we want to identify these 2 phenomenon by calculating the female group’s 
+- variation of sentiment polarity over time 
+- mean of sentiment polarity over time 
+And compare the results with the parameters in male group.
+
 
 ## Conclusion
 
