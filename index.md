@@ -27,7 +27,7 @@ schematic diagram of our analysis process is shown in Fig.2 and the detailed ana
 ![**"Fig.2 Method"**](assets/images/method.jpg)
 
 ## Our Discoveries
-### A Growing Trend of Negative Emotion 
+### Negative Emotion Trend
 In addition to the growing population that suffers from depression, a survey from [Gallup Analytics](https://hcabarbieri.it/2021/07/21/2020-was-the-year-of-negative-emotions-poll-finds/) also pointed out that the negative experience index has been increasing year by year from 2015 to 2020. With the Quotebank dataset from 2015 to 2019, we tried to reproduce and look into this phenomenon deeper with both negative words and polarity analysis.
 
 ![**"Fig.3 Negative Emotion Trend"**](assets/images/negative words 4 years.png)
@@ -37,7 +37,7 @@ According to our analysis of the 60 negative words over years, we found that fro
 
 Overall, our analysis results based on quotebank data are consistent with the survey from Gallup Analytics.
 
-### Is there Seasonal Affective Disorder 
+### Seasonal Effect
 Seasonal affective disorder (SAD) is a type of depression that's related to changes in seasons —symptoms start in the fall and continue into the winter months, sapping your energy and making you feel moody. While these symptoms often resolve during the spring and summer months. It is said that SAD is led by neurotransmitter disorder, melatonin Overproduction, vitamin D underproduction, as well as lack of physical activity, etc.
 
 Since the Quotebank dataset includes quotes throughout the year over decades, we assumed that it would be interesting to oberve the seasonal affective disorder (SAD). We analyzed the number of quotes containing negative words in 2015, 2017, 2018, and 2019, and the changes in polarity scores over the months.
@@ -52,6 +52,8 @@ In the sentiment analysis that takes 10,000 random numbers every month, there ar
 **2. Polarity scores varies over year**
 
 In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
+
+<a href="url"><img src="http://url.to/image.png" align="left" height="48" width="48" ></a>
 
 To sum up, compared with analyzing the changes of negative words quotes over year, the changes in polarity scores over year are more pronounced. This could be because that when we analyze the number of negative words quotes over year, only specific quotes contain negative words in our defined list are counted. However, when we analyze the polarity scores of the quotes, TextBlob is compared to NLTK training set, so the negative words considered are broader. Also, TextBlob uses a weighted average sentiment score over all the words in each sentence.
 
@@ -85,7 +87,7 @@ Overall, we could not tell the seasonal effect
 3. People with depression use language differently – here’s how to spot it. Accessed December 17, 2021. https://theconversation.com/people-with-depression-use-language-differently-heres-how-to-spot-it-90877
 4. Al-Mosaiwi M, Johnstone T. In an Absolute State: Elevated Use of Absolutist Words Is a Marker Specific to Anxiety, Depression, and Suicidal Ideation. Clin Psychol Sci. 2018;6(4):529-542. doi:10.1177/2167702617747074/SUPPL_FILE/TABLE_S2_SUPPLEMENTAL_MATERIAL.PDF
 5. Tausczik YR, Pennebaker JW. The psychological meaning of words: LIWC and computerized text analysis methods. J Lang Soc Psychol. 2010;29(1):24-54. doi:10.1177/0261927X09351676
-6. 2020 was the year of negative emotions, poll finds | Daily Mail Online. Accessed December 17, 2021. https://www.dailymail.co.uk/health/article-9807857/2020-year-negative-emotions-poll-finds.html?ns_mchannel=rss&ns_campaign=1490&ito=1490
+6. 2020 was the year of negative emotions, poll finds, Daily Mail Online. Accessed December 17, 2021. https://www.dailymail.co.uk/health/article-9807857/2020-year-negative-emotions-poll-finds.html?ns_mchannel=rss&ns_campaign=1490&ito=1490
 7. TextBlob: Simplified Text Processing — TextBlob 0.16.0 documentation. Accessed December 17, 2021. https://textblob.readthedocs.io/en/dev/
 8. Zhang S, Yang Y, Xie XH, et al. The effect of temperature on cause-specific mental disorders in three subtropical cities: A case-crossover study in China. Environ Int. 2020;143:105938. doi:10.1016/J.ENVINT.2020.105938
 9. Chan EYY, Lam HCY, So SHW, et al. Association between Ambient Temperatures and Mental Disorder Hospitalizations in a Subtropical City: A Time-Series Study of Hong Kong Special Administrative Region. Int J Environ Res Public Health. 2018;15(4). doi:10.3390/IJERPH15040754
