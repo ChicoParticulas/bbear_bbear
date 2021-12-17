@@ -14,7 +14,7 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 2. Analyze the seasonal effect on negative emotions
 3. Analyze gender effect on negative emotions
 
-<a href="assets/images/factor.jpg"><img src="assets/images/factor.jpg" align="center" height="400" width="400" ></a>
+<a href="assets/images/factor.jpg"><img src="assets/images/factor.jpg" align="centerme" width="400" ></a>
 
 ## Method
 To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2015 to 2019(excluding 2016 since the data in 2016 is not equally distributed in each month) and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
@@ -24,13 +24,13 @@ TextBlob is a Python library for prossing textual data, is useful for sentiment 
 For all the analysis, we randomlly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. A 
 schematic diagram of our analysis process is shown in Fig.2 and the detailed analytic methods are describled in the [Github](./another-page.html).
 
-<a href="assets/images/method.jpg"><img src="assets/images/method.jpg" align="center" height="400" width="1000" ></a>
+<a href="assets/images/method.jpg"><img src="assets/images/method.jpg" align="center" width="1000" ></a>
 
 ## Our Discoveries
 ### Negative Emotion Trend
 In addition to the growing population that suffers from depression, a survey from [Gallup Analytics](https://hcabarbieri.it/2021/07/21/2020-was-the-year-of-negative-emotions-poll-finds/) also pointed out that the negative experience index has been increasing year by year from 2015 to 2020. With the Quotebank dataset from 2015 to 2019, we tried to reproduce and look into this phenomenon deeper with both negative words and polarity analysis.
 
-<a href="assets/images/negative words 4 years.png"><img src="assets/images/negative words 4 years.png" align="center" height="550" width="1400" ></a>
+<a href="assets/images/negative words 4 years.png"><img src="assets/images/negative words 4 years.png" align="center" width="1400" ></a>
 
 According to our analysis of the 60 negative words over years, we found that from 2015 to 2019 (not including 2016), in general, the negative count increases year by year. Although the error bar of each year overlaps greatly (especially 2015 and 2017), if we compare only 2015 and 2019, a slightly increase can be observed. We suggested the reason behind this is that 60 words are too few for such a big dayaset, if we include more negative words, we might see this growing trend clearer and more specifically.
 
@@ -45,14 +45,14 @@ Since the Quotebank dataset includes quotes throughout the year over decades, we
 
 In the sentiment analysis that takes 10,000 random numbers every month, there are about 575-725 quotes containing negative words every month, that is to say, about 5-7% of quotes associates with anxious every month depression related words. With the analysis of negative words, we could not state any trend or difference between each months. This could also result from the fact that the 60 negative words appear too few in the quote that they can barely make difference. Yet, another possible reason could be that the nature of the quotes from Quotebank are not suitable for this study.
 
-<a href="assets/images/seasonal.png"><img src="assets/images/seasonal.png" align="center" height="550" width="1400" ></a>
-<a href="assets/images/seasonal overall.png"><img src="assets/images/seasonal overall.png" align="center" height="500" width="1400" ></a>
+<a href="assets/images/seasonal.png"><img src="assets/images/seasonal.png" align="center" width="1400" ></a>
+<a href="assets/images/seasonal overall.png"><img src="assets/images/seasonal overall.png" align="center" width="1400" ></a>
 
 **2. Polarity scores varies over year**
 
 In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
 
-<a href="assets/images/seasonal_Polarity.png"><img src="assets/images/seasonal_Polarity.png" align="center" height="600" width="1400" ></a>
+<a href="assets/images/seasonal_Polarity.png"><img src="assets/images/seasonal_Polarity.png" align="center" width="1400" ></a>
 
 To sum up, compared with analyzing the changes of negative words quotes over year, the changes in polarity scores over year are more pronounced. This could be because that when we analyze the number of negative words quotes over year, only specific quotes contain negative words in our defined list are counted. However, when we analyze the polarity scores of the quotes, TextBlob is compared to NLTK training set, so the negative words considered are broader. Also, TextBlob uses a weighted average sentiment score over all the words in each sentence.
 
