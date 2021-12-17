@@ -53,7 +53,7 @@ In the sentiment analysis that takes 10,000 random numbers every month, there ar
 
 In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
 
-<a href="assets/images/seasonal_Polarity.png"><img src="assets/images/seasonal_Polarity.png" align="center" height="200" width="400" ></a>
+<a href="assets/images/seasonal_Polarity.png"><img src="assets/images/seasonal_Polarity.png" align="center" height="400" width="800" ></a>
 
 To sum up, compared with analyzing the changes of negative words quotes over year, the changes in polarity scores over year are more pronounced. This could be because that when we analyze the number of negative words quotes over year, only specific quotes contain negative words in our defined list are counted. However, when we analyze the polarity scores of the quotes, TextBlob is compared to NLTK training set, so the negative words considered are broader. Also, TextBlob uses a weighted average sentiment score over all the words in each sentence.
 
