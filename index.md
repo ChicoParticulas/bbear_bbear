@@ -40,7 +40,7 @@ To look into this topic, we analyzed the dataset from [Quotebank](./another-page
 
 
 ## Our Discoveries
-### Growing Awareness?
+### Growing Awareness
 It is only until recently that people started to be more and more aware of mental condition. **Many surveys show that public concern about mental health has increased in recent years.** Therefore, we are going to figure out if there is a growing attention to mental condition in society as the disorder prevails by the following keywords: **mental illness, psychopath, depression, mental disorder**.
 
 ![<awareness src="awareness.jpeg"  align="center" width="100" height="50"/>](assets/images/awareness.jpeg)
