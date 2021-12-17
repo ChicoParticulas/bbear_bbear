@@ -68,16 +68,8 @@ From the result, we can observe the following two phenomena:
  In 2015, for every 1500 negative quotes, only (650-750) negative quotes came from women. However, in 2019, there were (700-775) negative quotes that came from women, which is about 1.05 times of that in 2015.
 
 ## Conclusions
-We randomly sampled millions of data per year based on the data in 2015, 2017, 2018, and 2019 and considered bootstrapping method, sentiment analysis, and the classification of the gender. The conclusions of our project are as follows:
-**1. There is a growing trend of negative emotion.**
-We found that the quotes of negative words have been increasing year by year since 2015, reaching the highest value in 2019.
-**2. Seasonal effect**
-Overall, we could not tell the seasonal effect for the following reasons
-(a) Number of negative quotes: The ratio of negative quotes to all quotes is quite low, 5-7%, regardless of the season, which makes it hard to distingush the difference between months.
-(b) Polarity scores vary in the year: Regardless of the season, the negative polarity scores fall from -0.08 to -0.07, indicating only a mild negative tendency among these years.
-**3. Gender differences in negative emotions**
-(a) The ratio of males to females who spoke negatively is about 1:1.1. That is to say, girls are more negatively inclined, which is consistent with the scientific fact-Women Are More Prone to Depression.
-(b) From 2015 to 2019, there has been a gradual increase in female negative quotes. The number of female negative speeches in 2019 is 1.05 times in 2015.
+We randomly sampled millions of data per year based on the data in 2015, 2017, 2018, and 2019 and considered bootstrapping method, sentiment analysis, and the classification of the gender. To conclude, we can see a **growing trend of negative emotion** from 2015 to 2019 by analyzing quotes with negative words  and polarity. However, we **could not tell the seasonal effect from the dataset of Quotebank** regardless of the negative word analysis or polarity analysis. Due to the nature of the dataset from Quotebank, which is mainly political news, it could be hard for us to see the effect since the quotes would not be as personalized as social media where we can express our emotion. Furthermore, the negative word count could not only be affected by whether, but also related to the political situation at the time point. Finally, we also observed that **women are more negatively inclined**, which is consistent with the scientific fact - women are more prone to depression and there is also a growing trend of negative emotion.
+
 
 ### Reference
 1. Vaucher T, Spitz A, Catasta M, West R. Quotebank: A Corpus of Quotations from a Decade of News. Published online 2021. doi:10.5281/zenodo.4277311
