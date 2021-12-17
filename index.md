@@ -46,14 +46,14 @@ Since the Quotebank dataset includes quotes throughout the year over decades, we
 
 In the sentiment analysis that takes 10,000 random numbers every month, there are about 575-725 quotes containing negative words every month, that is to say, about 5-7% of quotes associates with anxious every month depression related words. With the analysis of negative words, we could not state any trend or difference between each months. This could also result from the fact that the 60 negative words appear too few in the quote that they can barely make difference. Yet, another possible reason could be that the nature of the quotes from Quotebank are not suitable for this study.
 
-<a href="assets/images/seasonal.png"><**"Fig.5 seasonal"** src="assets/images/seasonal.png" align="center" height="700" width="1400" ></a>
-<a href="assets/images/seasonal overall.png"><**"Fig.6 seasonal summary"** src="assets/images/seasonal overall.png" align="center" height="700" width="1400" ></a>
+<a href="assets/images/seasonal.png"><img src="assets/images/seasonal.png" align="center" height="700" width="1400" ></a>
+<a href="assets/images/seasonal overall.png"><img src="assets/images/seasonal overall.png" align="center" height="700" width="1400" ></a>
 
 **2. Polarity scores varies over year**
 
 In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
 
-<a href="assets/images/seasonal_Polarity.png"><**"Fig.7 polarity summary"** src="assets/images/seasonal_Polarity.png" align="center" height="700" width="1400" ></a>
+<a href="assets/images/seasonal_Polarity.png"><img src="assets/images/seasonal_Polarity.png" align="center" height="700" width="1400" ></a>
 
 To sum up, compared with analyzing the changes of negative words quotes over year, the changes in polarity scores over year are more pronounced. This could be because that when we analyze the number of negative words quotes over year, only specific quotes contain negative words in our defined list are counted. However, when we analyze the polarity scores of the quotes, TextBlob is compared to NLTK training set, so the negative words considered are broader. Also, TextBlob uses a weighted average sentiment score over all the words in each sentence.
 
