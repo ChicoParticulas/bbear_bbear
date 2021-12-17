@@ -16,13 +16,12 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 
 ## Method
 To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We focused on the data from 2017 to 2020, since the data in 2016 is not equally distributed and only covers until April in 2021. For all the analysis, we randomlly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. The detailed analytic methods are describled below and shown in Fig.2.
-![alt-text-1](image1.png "title-1") ![alt-text-2](image2.png "title-2")
 
 ## Our Discoveries
 ### Growing Awareness
 It is only until recently that people started to be more and more aware of mental condition. **Many surveys show that public concern about mental health has increased in recent years.** Therefore, we are going to figure out if there is a growing attention to mental condition in society as the disorder prevails by the following keywords: **mental illness, psychopath, depression, mental disorder**.
 
-![<awareness src="awareness.jpeg"  align="center" width="100" height="50"/>](assets/images/awareness.jpeg)
+![2015](assets/images/awareness/Polarity_Score_in_2015 (high).png "Polarity_Score_in_2015 (high)") ![2017](assets/images/awareness/Polarity_Score_in_2017 (high).png "Polarity_Score_in_2015 (high)")
 
 ### Seasonal Effect
 ##### What is SAD?
