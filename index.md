@@ -42,13 +42,13 @@ Seasonal affective disorder (SAD) is a type of depression that's related to chan
 
 Since the Quotebank dataset includes quotes throughout the year over decades, we assumed that it would be interesting to oberve the seasonal affective disorder (SAD). We analyzed the number of quotes containing negative words in 2015, 2017, 2018, and 2019, and the changes in polarity scores over the months.
 
-1. Number of negative words quotes over year
+**1. Number of negative words quotes over year**
 In the sentiment analysis that takes 10,000 random numbers every month, there are about 575-725 quotes containing negative words every month, that is to say, about 5-7% of quotes associates with anxious every month depression related words. With the analysis of negative words, we could not see a clear 
 
 ![**"Fig.5 seasonal"**](assets/images/seasonal.png)
 ![**"Fig.6 seasonal summary"**](assets/images/seasonal overall.png)
 
-2. Polarity scores varies over year
+**2. Polarity scores varies over year**
 In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). We discovered the following facts:
 
 (a) In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
