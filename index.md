@@ -15,6 +15,8 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 3. Analyze gender effect on negative emotions
 
 ![**"Fig.1 Main Goals"**](assets/images/factor.jpg)
+<**"Fig.1 Main Goals"** src="assets/images/factor.jpg" width=50% height=50%>
+<a href="assets/images/factor.jpg"><img src="assets/images/factor.jpg" align="center" width=50% ></a>
 
 ## Method
 To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2017 to 2020, since the data in 2016 is not equally distributed in each month and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
@@ -40,15 +42,10 @@ According to our analysis of negative words over years, we found that from 2015 
 
 
 ### Seasonal Effect
-##### What is SAD?
-Seasonal affective disorder (SAD) is a type of depression that's related to changes in seasons —symptoms start in the fall and continue into the winter months, sapping your energy and making you feel moody. These symptoms often resolve during the spring and summer months
-##### Cause
-- Neurotransmitter regulation issues: People with SAD may have trouble regulating serotonin
-- Melatonin Overproduction: Darkness increases production of melatonin, which regulates sleep. As winter days become shorter, melatonin production increases, leaving people with SAD to feel sleepier and more lethargic, often with delayed circadian rhythms.
-- Vitamin D Underproduction: People with SAD also may produce less Vitamin D, which is believed to help with serotonin activity.
-- SAD and other forms of depression is exercise and physical activity, but these may be difficult to instigate due to lack of motivation and the cold temperatures in the winter.
+#### What is SAD?
+Seasonal affective disorder (SAD) is a type of depression that's related to changes in seasons —symptoms start in the fall and continue into the winter months, sapping your energy and making you feel moody. While these symptoms often resolve during the spring and summer months. It is said that SAD is led by neurotransmitter disorder, melatonin Overproduction, vitamin D underproduction, as well as lack of physical activity, etc.
 
-![seasonal](assets/images/Polarity_Score_in_4_years (high).png)
+<img width=”200" src=”assets/images/seasonal.png" />
 
 ### Gender Effect
 **Women are more prone to depression and moody swings.** So we want to identify these 2 phenomenon by calculating the female group’s 
