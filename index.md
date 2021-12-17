@@ -17,7 +17,7 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 <a href="assets/images/factor.jpg"><img src="assets/images/factor.jpg" alt="Fig.1 Main Goals" align="centerme" width="400" ></a>
 
 ## Method
-To look into this topic, we analyzed the dataset from [Quotebank](), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2015 to 2019(excluding 2016 since the data in 2016 is not equally distributed in each month) and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
+To look into this topic, we analyzed the dataset from [Quotebank](https://quotebank.dlab.tools/search?target=quotation&text=the&from_date=2008-09-01&to_date=2020-04-17), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2015 to 2019(excluding 2016 since the data in 2016 is not equally distributed in each month) and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
 
 TextBlob is a Python library for prossing textual data, is useful for sentiment analysis by a pre-defined dictionary classifying negative and positive words. TextBlob assigns a score, between [-1, 1] to each word in a sentence, then by operations, for example, multipys and takes average, to get the final results. TextBlob returns polarity and subjectivity of a sentence which we can further analyze. Gender-guesser predicts the gender of a given first name with six different output: unknown (name not found), andy (androgynous), male, female, mostly_male, or mostly_female. In our project, we take male and mostly_male as man, female and mostly_female as women, while discard the data that gives output as unknown and andy.
 
@@ -53,30 +53,29 @@ In the sentiment analysis that takes 10,000 random numbers every month, there ar
 In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
 
 <a href="assets/images/seasonal_Polarity.png"><img src="assets/images/seasonal_Polarity.png" align="center" width="1400" ></a>
+<a href="assets/images/polarity overall.png"><img src="assets/images/polarity overall.png" align="center" width="1400" ></a>
 
 To sum up, compared with analyzing the changes of negative words quotes over year, the changes in polarity scores over year are more pronounced. This could be because that when we analyze the number of negative words quotes over year, only specific quotes contain negative words in our defined list are counted. However, when we analyze the polarity scores of the quotes, TextBlob is compared to NLTK training set, so the negative words considered are broader. Also, TextBlob uses a weighted average sentiment score over all the words in each sentence.
 
 ### Gender Effect
 Accordig to research over the years, it is believed that **women are more prone to depression and mood swings.** To figure out this issue, we made use of Quotebank, which contains quotes from both men and women, and tried to identify these two phenomena by calculating and comparing the **variation and mean of sentiment polarity** over time between male and feamale group.
 
-<a href="assets/images/GENDER.jpeg"><img src="assets/images/GENDER.jpeg" align="center" width="1400" ></a>
+<a href="assets/images/gender effect.png"><img src="assets/images/gender effect.png" align="center" ></a>
 
-Whether analyzing all sentences or only analyzing the sentences that are neutral or negative (polarity<=0), we can observe the following two phenomena:
-
+From the result, we can observe the following two phenomena:
 1. In 2015, 2017, 2018, and 2019, the ratio of gender saying negative quotes is 1:1.1 (men: women), which means that more negative quotes come from women every year.
 2. The number of negative quotes from women is increasing year by year:
  In 2015, for every 1500 negative quotes, only (650-750) negative quotes came from women. However, in 2019, there were (700-775) negative quotes that came from women, which is about 1.05 times of that in 2015.
 
-
 ## Conclusions
 We randomly sampled millions of data per year based on the data in 2015, 2017, 2018, and 2019 and considered bootstrapping method, sentiment analysis, and the classification of the gender. The conclusions of our project are as follows:
 **1. There is a growing trend of negative emotion.**
-We found that the quotes of negative words have been increasing year by year since 2015, reaching the highest value in 2019
+We found that the quotes of negative words have been increasing year by year since 2015, reaching the highest value in 2019.
 **2. Seasonal effect**
-Overall, we could not tell the seasonal effect 
-(a) Number of negative quotes: The ratio of negative quotes to all quotes is 5-7% regardless of the season.
+Overall, we could not tell the seasonal effect for the following reasons
+(a) Number of negative quotes: The ratio of negative quotes to all quotes is quite low, 5-7%, regardless of the season, which makes it hard to distingush the difference between months.
 (b) Polarity scores vary in the year: Regardless of the season, the negative polarity scores fall from -0.08 to -0.07, indicating only a mild negative tendency among these years.
-3. Gender differences in negative emotions
+**3. Gender differences in negative emotions**
 (a) The ratio of males to females who spoke negatively is about 1:1.1. That is to say, girls are more negatively inclined, which is consistent with the scientific fact-Women Are More Prone to Depression.
 (b) From 2015 to 2019, there has been a gradual increase in female negative quotes. The number of female negative speeches in 2019 is 1.05 times in 2015.
 
