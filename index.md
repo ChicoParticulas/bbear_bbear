@@ -43,19 +43,17 @@ Seasonal affective disorder (SAD) is a type of depression that's related to chan
 Since the Quotebank dataset includes quotes throughout the year over decades, we assumed that it would be interesting to oberve the seasonal affective disorder (SAD). We analyzed the number of quotes containing negative words in 2015, 2017, 2018, and 2019, and the changes in polarity scores over the months.
 
 **1. Number of negative words quotes over year**
-In the sentiment analysis that takes 10,000 random numbers every month, there are about 575-725 quotes containing negative words every month, that is to say, about 5-7% of quotes associates with anxious every month depression related words. With the analysis of negative words, we could not see a clear 
+
+In the sentiment analysis that takes 10,000 random numbers every month, there are about 575-725 quotes containing negative words every month, that is to say, about 5-7% of quotes associates with anxious every month depression related words. With the analysis of negative words, we could not state any trend or difference between each months. This could also result from the fact that the 60 negative words appear too few in the quote that they can barely make difference. Yet, another possible reason could be that the nature of the quotes from Quotebank are not suitable for this study.
 
 ![**"Fig.5 seasonal"**](assets/images/seasonal.png)
 ![**"Fig.6 seasonal summary"**](assets/images/seasonal overall.png)
 
 **2. Polarity scores varies over year**
-In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). We discovered the following facts:
 
-(a) In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
+In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
 
 To sum up, compared with analyzing the changes of negative words quotes over year, the changes in polarity scores over year are more pronounced. This could be because that when we analyze the number of negative words quotes over year, only specific quotes contain negative words in our defined list are counted. However, when we analyze the polarity scores of the quotes, TextBlob is compared to NLTK training set, so the negative words considered are broader. Also, TextBlob uses a weighted average sentiment score over all the words in each sentence.
-
-
 
 ### Gender Effect
 **Women are more prone to depression and moody swings.** So we want to identify these 2 phenomenon by calculating the female group’s 
@@ -65,5 +63,16 @@ And compare the results with the parameters in male group.
 
 
 ## Conclusions
+We randomly sample millions of data per year based on 2015, 2017, 2018, and 2019 and consider bootstrapping method, sentiment analysis, and the classification of the gender. The conclusions are as follows:
+1. Public awareness of negative emotion over time: 
+We found that the quotes of negative words have been increasing year by year since 2015, reaching the highest value in 2019
+2. Seasonal effect
+(a) Number of negative quotes: The ratio of negative quotes to all quotes is 5-7% regardless of the season.
+
+(b) Polarity scores vary in the year: Regardless of the season, the negative polarity scores fall from -0.08 to -0.07, indicating only a mild negative tendency among these years.
+3. Gender differences in negative emotions
+(a) The ratio of males to females who spoke negatively is about 1:1.1. That is to say, girls are more negatively inclined, which is consistent with the scientific fact-Women Are More Prone to Depression.
+
+(b) From 2015 to 2019, there has been a gradual increase in female negative quotes. The number of female negative speeches in 2019 is 1.05 times in 2015.
 
 ### Reference
