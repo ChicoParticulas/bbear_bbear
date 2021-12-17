@@ -39,13 +39,13 @@ To look into this topic, we analyzed the dataset from [Quotebank](./another-page
 8. Draw box plots over time, and compare the gender means and variation over time.
 
 
-
-### Is there a growing Awareness?
+## Our Discoveries
+### Growing Awareness?
 It is only until recently that people started to be more and more aware of mental condition. Many surveys show that public concern about mental health has increased in recent years. Therefore, we are going to figure out if there is a growing attention to mental condition in society as the disorder prevails by the following keywords: mental illness, psychopath, depression, mental disorder.
 
 ![<awareness src="awareness.jpeg"  align="center" width="100" height="50"/>](assets/images/awareness.jpeg)
 
-### Seasonal effect on negative emotions
+### Seasonal Effect
 ##### What is SAD?
 Seasonal affective disorder (SAD) is a type of depression that's related to changes in seasons —symptoms start in the fall and continue into the winter months, sapping your energy and making you feel moody. These symptoms often resolve during the spring and summer months
 ##### Cause
@@ -54,13 +54,13 @@ Seasonal affective disorder (SAD) is a type of depression that's related to chan
 - Vitamin D Underproduction: People with SAD also may produce less Vitamin D, which is believed to help with serotonin activity.
 - SAD and other forms of depression is exercise and physical activity, but these may be difficult to instigate due to lack of motivation and the cold temperatures in the winter.
 
-### Analyzing gender effect in negative emotions
+### Gender Effect
 **Women are more prone to depression and moody swings.** So we want to identify these 2 phenomenon by calculating the female group’s 
 - variation of sentiment polarity over time 
 - mean of sentiment polarity over time 
 And compare the results with the parameters in male group.
 
 
-## Conclusion
+## Conclusions
 
 ### Reference
