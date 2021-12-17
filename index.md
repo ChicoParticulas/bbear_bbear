@@ -17,12 +17,12 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 <a href="assets/images/factor.jpg"><img src="assets/images/factor.jpg" alt="Fig.1 Main Goals" align="centerme" width="400" ></a>
 
 ## Method
-To look into this topic, we analyzed the dataset from [Quotebank](https://github.com/epfl-ada/ada-2021-project-bbear-or-not-bbear), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2015 to 2019(excluding 2016 since the data in 2016 is not equally distributed in each month) and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
+To look into this topic, we analyzed the dataset from [Quotebank](), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2015 to 2019(excluding 2016 since the data in 2016 is not equally distributed in each month) and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
 
 TextBlob is a Python library for prossing textual data, is useful for sentiment analysis by a pre-defined dictionary classifying negative and positive words. TextBlob assigns a score, between [-1, 1] to each word in a sentence, then by operations, for example, multipys and takes average, to get the final results. TextBlob returns polarity and subjectivity of a sentence which we can further analyze. Gender-guesser predicts the gender of a given first name with six different output: unknown (name not found), andy (androgynous), male, female, mostly_male, or mostly_female. In our project, we take male and mostly_male as man, female and mostly_female as women, while discard the data that gives output as unknown and andy.
 
 For all the analysis, we randomlly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. A 
-schematic diagram of our analysis process is shown in Fig.2 and the detailed analytic methods are describled in the [Github](./another-page.html).
+schematic diagram of our analysis process is shown in Fig.2 and the detailed analytic methods are describled in the [Github](https://github.com/epfl-ada/ada-2021-project-bbear-or-not-bbear).
 
 <a href="assets/images/method.jpg"><img src="assets/images/method.jpg" align="center" width="1000" ></a>
 
