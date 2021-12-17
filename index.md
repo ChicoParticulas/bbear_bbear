@@ -15,11 +15,9 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 3. Analyze gender effect on negative emotions
 
 ![**"Fig.1 Main Goals"**](assets/images/factor.jpg)
-<a href="assets/images/factor.jpg"><**"Fig.1 Main Goals"** src="assets/images/factor.jpg" align="center" width=50% ></a>
-<img width=”250" height=”400" src=”assets/images/factor.jpg" />
 
 ## Method
-To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2017 to 2020, since the data in 2016 is not equally distributed in each month and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
+To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2015 to 2019(excluding 2016 since the data in 2016 is not equally distributed in each month) and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
 
 TextBlob is a Python library for prossing textual data, is useful for sentiment analysis by a pre-defined dictionary classifying negative and positive words. TextBlob assigns a score, between [-1, 1] to each word in a sentence, then by operations, for example, multipys and takes average, to get the final results. TextBlob returns polarity and subjectivity of a sentence which we can further analyze. Gender-guesser predicts the gender of a given first name with six different output: unknown (name not found), andy (androgynous), male, female, mostly_male, or mostly_female. In our project, we take male and mostly_male as man, female and mostly_female as women, while discard the data that gives output as unknown and andy.
 
@@ -33,19 +31,31 @@ schematic diagram of our analysis process is shown in Fig.2 and the detailed ana
 In addition to the growing population that suffers from depression, a survey from [Gallup Analytics](https://hcabarbieri.it/2021/07/21/2020-was-the-year-of-negative-emotions-poll-finds/) also pointed out that the negative experience index has been increasing year by year from 2015 to 2020. With the Quotebank dataset from 2015 to 2019, we tried to reproduce and look into this phenomenon deeper with both negative words and polarity analysis.
 
 ![**"Fig.3 Negative Emotion Trend"**](assets/images/negative words 4 years.png)
-![**Fig.3 Negative Emotion Trend**](assets/images/negative words 4 years.png)
+![**Fig.4 Negative Emotion Trend**](assets/images/negative words 4 years.png)
 
-According to our analysis of negative words over years, we found that from 2015 to 2019 (not counting 2016, ), in general, the negative count increases year by year.
-Our analysis results based on quotebank data are consistent with the survey from Gallup Analytics.
+According to our analysis of the 60 negative words over years, we found that from 2015 to 2019 (not including 2016), in general, the negative count increases year by year. Although the error bar of each year overlaps greatly (especially 2015 and 2017), if we compare only 2015 and 2019, a slightly increase can be observed. We suggested the reason behind this is that 60 words are too few for such a big dayaset, if we include more negative words, we might see this growing trend clearer and more specifically.
 
-According to our analysis of negative words over years, we found that from 2015 to 2019 (not counting 2016, because the number of quote numbers in 2016 is extremely uneven over months), in general, the negative count increases year by year. Although the error bar of each year overlaps
+Overall, our analysis results based on quotebank data are consistent with the survey from Gallup Analytics.
 
-
-### Seasonal Effect
-#### What is SAD?
+### Is there Seasonal Affective Disorder 
 Seasonal affective disorder (SAD) is a type of depression that's related to changes in seasons —symptoms start in the fall and continue into the winter months, sapping your energy and making you feel moody. While these symptoms often resolve during the spring and summer months. It is said that SAD is led by neurotransmitter disorder, melatonin Overproduction, vitamin D underproduction, as well as lack of physical activity, etc.
 
-<img width=”200" src=”assets/images/seasonal.png" />
+Since the Quotebank dataset includes quotes throughout the year over decades, we assumed that it would be interesting to oberve the seasonal affective disorder (SAD). We analyzed the number of quotes containing negative words in 2015, 2017, 2018, and 2019, and the changes in polarity scores over the months.
+
+1. Number of negative words quotes over year
+In the sentiment analysis that takes 10,000 random numbers every month, there are about 575-725 quotes containing negative words every month, that is to say, about 5-7% of quotes associates with anxious every month depression related words. With the analysis of negative words, we could not see a clear 
+
+![**"Fig.5 seasonal"**](assets/images/seasonal.png)
+![**"Fig.6 seasonal summary"**](assets/images/seasonal overall.png)
+
+2. Polarity scores varies over year
+In the sentiment analysis of 10,000 random numbers taken every month, we analyze the polarity over time for negative quotes (polarity <=0 ). We discovered the following facts:
+
+(a) In general, the polarity scores fall between -0.08 and -0.07, which indicate the overall negative emotions are just slightly in these 4 years.
+
+To sum up, compared with analyzing the changes of negative words quotes over year, the changes in polarity scores over year are more pronounced. This could be because that when we analyze the number of negative words quotes over year, only specific quotes contain negative words in our defined list are counted. However, when we analyze the polarity scores of the quotes, TextBlob is compared to NLTK training set, so the negative words considered are broader. Also, TextBlob uses a weighted average sentiment score over all the words in each sentence.
+
+
 
 ### Gender Effect
 **Women are more prone to depression and moody swings.** So we want to identify these 2 phenomenon by calculating the female group’s 
