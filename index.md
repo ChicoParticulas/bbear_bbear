@@ -9,7 +9,7 @@ As depression is one of the priority conditions covered by WHO for its severenes
 ## How can we tell depression?
 A growing body of evidence shows that people in negative mood use language differently. Many studies have unveiled a class of words that can help accurately detect whether someone is in negative emotions. Furthermore, mental disorders have been found to be positively associated with temperature. Moreover, gender differences were expected for different emotion and social process words, and overall word use. 
 
-Under this context, we have applied **sentiment analysis** to automatically sort text data from Quotebank by positive, negative, and neutral sentiments. The further goals of our project are the following, also shown in Fig.1.
+Under this context, we have applied **sentiment analysis** to automatically sort text data from Quotebank by positive, negative, and neutral sentiments. The further goals of our project are the following, also shown in the figure below.
 1. Analyze the trend of negative experience
 2. Analyze the seasonal effect on negative emotions
 3. Analyze gender effect on negative emotions
@@ -21,7 +21,7 @@ To look into this topic, we analyzed the dataset from [Quotebank](https://quoteb
 
 TextBlob is a Python library for prossing textual data, is useful for sentiment analysis by a pre-defined dictionary classifying negative and positive words. TextBlob assigns a score, between [-1, 1] to each word in a sentence, then by operations, for example, multipys and takes average, to get the final results. TextBlob returns polarity and subjectivity of a sentence which we can further analyze. Gender-guesser predicts the gender of a given first name with six different output: unknown (name not found), andy (androgynous), male, female, mostly_male, or mostly_female. In our project, we take male and mostly_male as man, female and mostly_female as women, while discard the data that gives output as unknown and andy.
 
-For all the analysis, we randomly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. A schematic diagram of our analysis process is shown in Fig.2 and the detailed analytic methods are described in the [Github](https://github.com/epfl-ada/ada-2021-project-bbear-or-not-bbear).
+For all the analysis, we randomly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. A schematic diagram of our analysis process is shown in the figure and the detailed analytic methods are described in the [Github](https://github.com/epfl-ada/ada-2021-project-bbear-or-not-bbear).
 
 <a href="assets/images/method.jpg"><img src="assets/images/method.jpg" align="center" width="1000" ></a>
 
@@ -39,7 +39,7 @@ Note: The polarity score is a float within the range [-1.0, 1.0]. Sentiment scor
 In addition to the growing population that suffers from depression, a survey from [Gallup Analytics](https://hcabarbieri.it/2021/07/21/2020-was-the-year-of-negative-emotions-poll-finds/) also pointed out that the negative experience index has been increasing year by year from 2015 to 2020. With the Quotebank dataset from 2015 to 2019, we tried to reproduce and look into this phenomenon deeper with both negative words and polarity analysis.
 
 <a href="assets/images/negative words 4 years.png"><img src="assets/images/negative words 4 years.png" align="center" width="1400" ></a>
-<a href="assets/images/negative words 4 years.png"><img src="assets/images/negative words 4 years.png" align="center" width="1400" ></a>
+<a href="assets/images/polarity trend.png"><img src="assets/images/polarity trend.png" align="center" width="1400" ></a>
 
 According to our analysis of the 60 negative words over years, we found that from 2015 to 2019 (not including 2016), in general, the negative count increases year by year. Although the error bar of each year overlaps greatly (especially 2015 and 2017), if we compare only 2015 and 2019, a slightly increase can be observed. We suggested the reason behind this is that 60 words are too few for such a big dayaset, if we include more negative words, we might see this growing trend clearer and more specifically.
 
