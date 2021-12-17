@@ -31,11 +31,14 @@ To analyze the expression of negative emotion, we performed analysis as [describ
 
 First, we tried to understand if there is a growing **public awareness of mental illness** by counting the keywords, mental illness, psychopath, depression, mental disorder. Yet, they are too specific and sparse in the dataset that we could barely do the analysis. Second, we ran a quick analysis to understand the **performance of TextBlob and distribution of the polarity score within the dataset**. In 1 million quotes extracted, there are around 50% of quotes scored positive, 20% neutral, while only 30% got a negative value from TextBlob. 
 
-With the background knowledge in mind, we focus our analysis on the **negative polarity score**, to avoid the large portion of positive quotes cancel the effect. 
+With the background knowledge in mind, we **focus our analysis on the negative polarity score**, to avoid the large portion of positive quotes cancel the effect. Furthermore, to make the polarity score more precise, we **enlarged the anxious depression related words to 60 words** (instead of four in the case of public awareness), and discuss the seperate or combined effect of negative words and sentiment analysis.
+
+Note: The polarity score is a float within the range [-1.0, 1.0]. Sentiment score detects emotions and assigns them sentiment scores, for example, from -1 up to 1 – from the most negative to most positive sentiment.
 
 ### Negative Emotion Trend
 In addition to the growing population that suffers from depression, a survey from [Gallup Analytics](https://hcabarbieri.it/2021/07/21/2020-was-the-year-of-negative-emotions-poll-finds/) also pointed out that the negative experience index has been increasing year by year from 2015 to 2020. With the Quotebank dataset from 2015 to 2019, we tried to reproduce and look into this phenomenon deeper with both negative words and polarity analysis.
 
+<a href="assets/images/negative words 4 years.png"><img src="assets/images/negative words 4 years.png" align="center" width="1400" ></a>
 <a href="assets/images/negative words 4 years.png"><img src="assets/images/negative words 4 years.png" align="center" width="1400" ></a>
 
 According to our analysis of the 60 negative words over years, we found that from 2015 to 2019 (not including 2016), in general, the negative count increases year by year. Although the error bar of each year overlaps greatly (especially 2015 and 2017), if we compare only 2015 and 2019, a slightly increase can be observed. We suggested the reason behind this is that 60 words are too few for such a big dayaset, if we include more negative words, we might see this growing trend clearer and more specifically.
