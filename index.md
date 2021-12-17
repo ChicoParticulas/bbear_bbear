@@ -80,3 +80,13 @@ Overall, we could not tell the seasonal effect
 (b) From 2015 to 2019, there has been a gradual increase in female negative quotes. The number of female negative speeches in 2019 is 1.05 times in 2015.
 
 ### Reference
+1. Vaucher T, Spitz A, Catasta M, West R. Quotebank: A Corpus of Quotations from a Decade of News. Published online 2021. doi:10.5281/zenodo.4277311
+2. Kumar A, Sharma A, Arora A. Anxious Depression Prediction in Real-time Social Data. Accessed December 17, 2021. http://ssrn.com/link/ICAESMT-2019.html=xyz
+3. People with depression use language differently – here’s how to spot it. Accessed December 17, 2021. https://theconversation.com/people-with-depression-use-language-differently-heres-how-to-spot-it-90877
+4. Al-Mosaiwi M, Johnstone T. In an Absolute State: Elevated Use of Absolutist Words Is a Marker Specific to Anxiety, Depression, and Suicidal Ideation. Clin Psychol Sci. 2018;6(4):529-542. doi:10.1177/2167702617747074/SUPPL_FILE/TABLE_S2_SUPPLEMENTAL_MATERIAL.PDF
+5. Tausczik YR, Pennebaker JW. The psychological meaning of words: LIWC and computerized text analysis methods. J Lang Soc Psychol. 2010;29(1):24-54. doi:10.1177/0261927X09351676
+6. 2020 was the year of negative emotions, poll finds | Daily Mail Online. Accessed December 17, 2021. https://www.dailymail.co.uk/health/article-9807857/2020-year-negative-emotions-poll-finds.html?ns_mchannel=rss&ns_campaign=1490&ito=1490
+7. TextBlob: Simplified Text Processing — TextBlob 0.16.0 documentation. Accessed December 17, 2021. https://textblob.readthedocs.io/en/dev/
+8. Zhang S, Yang Y, Xie XH, et al. The effect of temperature on cause-specific mental disorders in three subtropical cities: A case-crossover study in China. Environ Int. 2020;143:105938. doi:10.1016/J.ENVINT.2020.105938
+9. Chan EYY, Lam HCY, So SHW, et al. Association between Ambient Temperatures and Mental Disorder Hospitalizations in a Subtropical City: A Time-Series Study of Hong Kong Special Administrative Region. Int J Environ Res Public Health. 2018;15(4). doi:10.3390/IJERPH15040754
+10. Eichstaedt JC, Smith RJ, Merchant RM, et al. Facebook language predicts depression in medical records. doi:10.1073/pnas.1802331115
