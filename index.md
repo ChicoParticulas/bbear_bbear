@@ -20,7 +20,8 @@ To look into this topic, we analyzed the dataset from [Quotebank](./another-page
 ## Our Discoveries
 ### Growing Awareness
 It is only until recently that people started to be more and more aware of mental condition. **Many surveys show that public concern about mental health has increased in recent years.** Therefore, we are going to figure out if there is a growing attention to mental condition in society as the disorder prevails by the following keywords: **mental illness, psychopath, depression, mental disorder**.
-
+<awareness align="center" width="100" height="100" src="assets/images/awareness.jpeg">
+  
 ![<awareness src="awareness.jpeg" align="center" width="100" height="50"/>](assets/images/awareness.jpeg)
 
 ### Seasonal Effect
@@ -32,11 +33,7 @@ Seasonal affective disorder (SAD) is a type of depression that's related to chan
 - Vitamin D Underproduction: People with SAD also may produce less Vitamin D, which is believed to help with serotonin activity.
 - SAD and other forms of depression is exercise and physical activity, but these may be difficult to instigate due to lack of motivation and the cold temperatures in the winter.
 
-<p float="left">
-  <2015 src="assets/images/awareness/Polarity_Score_in_2015 (high).png" width="200" />
-  <2017 src="assets/images/awareness/Polarity_Score_in_2017 (high).png" width="200" /> 
-  <2018 src="assets/images/awareness/Polarity_Score_in_2018 (high).png" width="200" />
-</p>
+![2015](assets/images/awareness/Polarity_Score_in_2015 (high).png =200x) ![2016](assets/images/awareness/Polarity_Score_in_2017 (high).png =200x)
 
 ### Gender Effect
 **Women are more prone to depression and moody swings.** So we want to identify these 2 phenomenon by calculating the female group’s 
