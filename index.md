@@ -14,7 +14,7 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 2. Analyze the seasonal effect on negative emotions
 3. Analyze gender effect on negative emotions
 
-![**"Fig.1 Main Goals"**](assets/images/factor.jpg)
+![**"Fig.1 Main Goals"**](assets/images/factor.jpg  | width=50%)
 <a href="assets/images/factor.jpg"><**"Fig.1 Main Goals"** src="assets/images/factor.jpg" align="center" width=50% ></a>
 
 ## Method
