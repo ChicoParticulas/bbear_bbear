@@ -15,7 +15,8 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 3. Analyzing gender effect in negative emotions
 
 ## Method
-To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We focused on the data from 2017 to 2020, since the data in 2016 is not equally distributed and only covers until April in 2021. For all the analysis, we randomlly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. The detailed analytic methods are describled below and shown in Fig.1.
+To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We focused on the data from 2017 to 2020, since the data in 2016 is not equally distributed and only covers until April in 2021. For all the analysis, we randomlly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. The detailed analytic methods are describled below and shown in Fig.2.
+![alt-text-1](image1.png "title-1") ![alt-text-2](image2.png "title-2")
 
 ## Our Discoveries
 ### Growing Awareness
