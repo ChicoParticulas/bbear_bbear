@@ -17,16 +17,22 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 <a href="assets/images/factor.jpg"><img src="assets/images/factor.jpg" alt="Fig.1 Main Goals" align="centerme" width="400" ></a>
 
 ## Method
-To look into this topic, we analyzed the dataset from [Quotebank](https://quotebank.dlab.tools/search?target=quotation&text=the&from_date=2008-09-01&to_date=2020-04-17), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2015 to 2019(excluding 2016 since the data in 2016 is not equally distributed in each month) and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
+To look into this topic, we analyzed the dataset from [Quotebank](https://quotebank.dlab.tools/search?target=quotation&text=the&from_date=2008-09-01&to_date=2020-04-17), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2015 to 2019(excluding 2016 since the data in 2016 is not equally distributed in each month) and in 2020, it only covers until April. To perform sentiment analysis, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
 
 TextBlob is a Python library for prossing textual data, is useful for sentiment analysis by a pre-defined dictionary classifying negative and positive words. TextBlob assigns a score, between [-1, 1] to each word in a sentence, then by operations, for example, multipys and takes average, to get the final results. TextBlob returns polarity and subjectivity of a sentence which we can further analyze. Gender-guesser predicts the gender of a given first name with six different output: unknown (name not found), andy (androgynous), male, female, mostly_male, or mostly_female. In our project, we take male and mostly_male as man, female and mostly_female as women, while discard the data that gives output as unknown and andy.
 
-For all the analysis, we randomlly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. A 
-schematic diagram of our analysis process is shown in Fig.2 and the detailed analytic methods are describled in the [Github](https://github.com/epfl-ada/ada-2021-project-bbear-or-not-bbear).
+For all the analysis, we randomly collect 1 million quotes from 2017, 2018, and 2019 for 30 times to decrease bais and variation. A schematic diagram of our analysis process is shown in Fig.2 and the detailed analytic methods are described in the [Github](https://github.com/epfl-ada/ada-2021-project-bbear-or-not-bbear).
 
 <a href="assets/images/method.jpg"><img src="assets/images/method.jpg" align="center" width="1000" ></a>
 
 ## Our Discoveries
+
+To analyze the expression of negative emotion, we performed analysis as [described](https://github.com/epfl-ada/ada-2021-project-bbear-or-not-bbear). Before we started on the research questions, we did a brief analysis to understand our database where we found some interesting facts that help correct our analytic methohds. 
+
+First, we tried to understand if there is a growing **public awareness of mental illness** by counting the keywords, mental illness, psychopath, depression, mental disorder. Yet, they are too specific and sparse in the dataset that we could barely do the analysis. Second, we ran a quick analysis to understand the **performance of TextBlob and distribution of the polarity score within the dataset**. In 1 million quotes extracted, there are around 50% of quotes scored positive, 20% neutral, while only 30% got a negative value from TextBlob. 
+
+With the background knowledge in mind, we focus our analysis on the **negative polarity score**, to avoid the large portion of positive quotes cancel the effect. 
+
 ### Negative Emotion Trend
 In addition to the growing population that suffers from depression, a survey from [Gallup Analytics](https://hcabarbieri.it/2021/07/21/2020-was-the-year-of-negative-emotions-poll-finds/) also pointed out that the negative experience index has been increasing year by year from 2015 to 2020. With the Quotebank dataset from 2015 to 2019, we tried to reproduce and look into this phenomenon deeper with both negative words and polarity analysis.
 
@@ -68,7 +74,11 @@ From the result, we can observe the following two phenomena:
  In 2015, for every 1500 negative quotes, only (650-750) negative quotes came from women. However, in 2019, there were (700-775) negative quotes that came from women, which is about 1.05 times of that in 2015.
 
 ## Conclusions
-We randomly sampled millions of data per year based on the data in 2015, 2017, 2018, and 2019 and considered bootstrapping method, sentiment analysis, and the classification of the gender. To conclude, we can see a **growing trend of negative emotion** from 2015 to 2019 by analyzing quotes with negative words  and polarity. However, we **could not tell the seasonal effect from the dataset of Quotebank** regardless of the negative word analysis or polarity analysis. Due to the nature of the dataset from Quotebank, which is mainly political news, it could be hard for us to see the effect since the quotes would not be as personalized as social media where we can express our emotion. Furthermore, the negative word count could not only be affected by whether, but also related to the political situation at the time point. Finally, we also observed that **women are more negatively inclined**, which is consistent with the scientific fact - women are more prone to depression and there is also a growing trend of negative emotion.
+We randomly sampled millions of data per year based on the data in 2015, 2017, 2018, and 2019 and considered bootstrapping method, sentiment analysis, and the classification of the gender. To conclude, we can see a **growing trend of negative emotion** from 2015 to 2019 by analyzing quotes with negative words  and polarity. 
+
+However, we **could not tell the seasonal effect from the dataset of Quotebank** regardless of the negative word analysis or polarity analysis. Due to the nature of the dataset from Quotebank, which is mainly political news, it could be hard for us to see the effect since the quotes would not be as personalized as social media where we can express our emotion. Furthermore, the negative word count could not only be affected by whether, but also related to the political situation at the time point. Finally, we also observed that **women are more negatively inclined**, which is consistent with the scientific fact - women are more prone to depression and there is also a growing trend of negative emotion in women.
+
+In summary, we used Quotebank data to perform sentiment analysis successfully. If the data sources of Quotebank can be more diverse in the future, we will be able to explore more information, such as the impact of climate change and ambient temperature on emotions.
 
 
 ### Reference
