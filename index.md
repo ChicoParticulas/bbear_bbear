@@ -33,7 +33,7 @@ Seasonal affective disorder (SAD) is a type of depression that's related to chan
 - Vitamin D Underproduction: People with SAD also may produce less Vitamin D, which is believed to help with serotonin activity.
 - SAD and other forms of depression is exercise and physical activity, but these may be difficult to instigate due to lack of motivation and the cold temperatures in the winter.
 
-![<2015 src="Polarity_Score_in_2015 (high).png">](assets/images/awareness/Polarity_Score_in_2015 (high).png)
+![2015](Polarity_Score_in_2015 (high).png)
  
 
 ### Gender Effect
