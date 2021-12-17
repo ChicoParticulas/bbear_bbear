@@ -33,7 +33,7 @@ First, we tried to understand if there is a growing **public awareness of mental
 
 With the background knowledge in mind, we **focus our analysis on the negative polarity score**, to avoid the large portion of positive quotes cancel the effect. Furthermore, to make the polarity score more precise, we **enlarged the anxious depression related words to 60 words** (instead of four in the case of public awareness), and discuss the seperate or combined effect of negative words and sentiment analysis.
 
-Note: The polarity score is a float within the range [-1.0, 1.0]. Sentiment score detects emotions and assigns them sentiment scores, for example, from -1 up to 1 – from the most negative to most positive sentiment.
+Note: The polarity score is a float within the range [-1.0, 1.0]. Sentiment score detects emotions and assigns them sentiment scores, for example, from -1 up to 1 – from the most negative to most positive sentiment. All the boxplots show the median of each group, while the lineplots indicate the mean. And all the errorbars in the plots refer to standard deviation.
 
 ### Negative Emotion Trend
 In addition to the growing population that suffers from depression, a survey from [Gallup Analytics](https://hcabarbieri.it/2021/07/21/2020-was-the-year-of-negative-emotions-poll-finds/) also pointed out that the negative experience index has been increasing year by year from 2015 to 2020. With the Quotebank dataset from 2015 to 2019, we tried to reproduce and look into this phenomenon deeper with both negative words and polarity analysis.
@@ -41,9 +41,9 @@ In addition to the growing population that suffers from depression, a survey fro
 <a href="assets/images/negative words 4 years.png"><img src="assets/images/negative words 4 years.png" align="center" width="1400" ></a>
 <a href="assets/images/polarity trend.png"><img src="assets/images/polarity trend.png" align="center" width="1400" ></a>
 
-According to our analysis of the 60 negative words over years, we found that from 2015 to 2019 (not including 2016), in general, the negative count increases year by year. Although the error bar of each year overlaps greatly (especially 2015 and 2017), if we compare only 2015 and 2019, a slightly increase can be observed. We suggested the reason behind this is that 60 words are too few for such a big dayaset, if we include more negative words, we might see this growing trend clearer and more specifically.
+According to our analysis of the 60 negative words over years, we found that from 2015 to 2019 (not including 2016), in general, the negative count increases year by year. Although the error bar of each year overlaps greatly (especially 2015 and 2017), if we compare only 2015 and 2019, a slightly increase can be observed. We suggested the reason behind this is that 60 words are too few for such a big dayaset, if we include more negative words, we might see this growing trend clearer and more specifically. 
 
-Overall, our analysis results based on quotebank data are consistent with the survey from Gallup Analytics.
+Furthermore, with the polarity trend Overall, our analysis results based on quotebank data are consistent with the survey from Gallup Analytics.
 
 ### Seasonal Effect
 Seasonal affective disorder (SAD) is a type of depression that's related to changes in seasons —symptoms start in the fall and continue into the winter months, sapping your energy and making you feel moody. While these symptoms often resolve during the spring and summer months. It is said that SAD is led by neurotransmitter disorder, melatonin Overproduction, vitamin D underproduction, as well as lack of physical activity, etc.
