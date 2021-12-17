@@ -14,8 +14,9 @@ Under this context, we have applied **sentiment analysis** to automatically sort
 2. Analyze the seasonal effect on negative emotions
 3. Analyze gender effect on negative emotions
 
-![**"Fig.1 Main Goals"**](assets/images/factor.jpg  | width=50%)
+![**"Fig.1 Main Goals"**](assets/images/factor.jpg)
 <a href="assets/images/factor.jpg"><**"Fig.1 Main Goals"** src="assets/images/factor.jpg" align="center" width=50% ></a>
+<img width=”250" height=”400" src=”assets/images/factor.jpg" />
 
 ## Method
 To look into this topic, we analyzed the dataset from [Quotebank](./another-page.html), which is a corpus of quotations from a decade of news. We mainly focused on the data from 2017 to 2020, since the data in 2016 is not equally distributed in each month and in 2020, it only covers until April. In this project, we applied two libraries, **[TextBlob](https://pypi.org/project/textblob/0.9.0/)** and **[gender-guesser](https://pypi.org/project/gender-guesser/)**, to analyze the dataset. 
